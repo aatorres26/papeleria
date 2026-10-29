@@ -3,7 +3,6 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <!-- COMPLETAR: título de la pestaña -->
   <title>Papeleria San Lucas | Librería - Papelería</title>
   <meta name="description" content="Barato y bueno">
 
@@ -37,7 +36,6 @@
               <li><a class="dropdown-item" href="#marcas">Marcas</a></li>
             </ul>
           </li>
-          <li class="nav-item"><a class="nav-link" href="#multimedia">Galería</a></li>
           <li class="nav-item"><a class="nav-link" href="#nosotros">Quiénes somos</a></li>
           <li class="nav-item"><a class="nav-link" href="#ubicacion">Ubicación</a></li>
           <li class="nav-item"><a class="nav-link" href="#contacto">Contáctanos</a></li>
@@ -55,45 +53,45 @@
 
     <!-- ==================== BANNER (CARRUSEL) ==================== -->
     <section id="seccion-banner">
-    <div id="banner" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-indicators">
-        <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
-        <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
-        <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
-      </div>
+      <div id="banner" class="carousel slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Diapositiva 1"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="1" aria-label="Diapositiva 2"></button>
+          <button type="button" data-bs-target="#banner" data-bs-slide-to="2" aria-label="Diapositiva 3"></button>
+        </div>
 
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="ratio ratio-21x9 bg-info">
-            <img src="img/banner1.jpg" class="object-fit-cover" alt="[COMPLETAR: descripción del banner 1]">
+        <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="ratio ratio-21x9 bg-info">
+              <img src="img/banner1.jpg" class="object-fit-cover" alt="[COMPLETAR: descripción del banner 1]">
+            </div>
+            <div class="carousel-caption">
+              <h1 class="display-4 fw-bold text-uppercase">COMPRA TUS PRODUCTOS AQUI!</h1>
+              <p class="d-none d-md-block">Encotraras todo lo que buscas</p>
+              <a href="#contacto" class="btn btn-warning btn-lg fw-bold">Pide a domicilio!</a>
+            </div>
           </div>
-          <div class="carousel-caption">
-            <h1 class="display-4 fw-bold text-uppercase">COMPRA TUS PRODUCTOS AQUI!</h1>
-            <p class="d-none d-md-block">Encotraras todo lo que buscas</p>
-            <a href="#contacto" class="btn btn-warning btn-lg fw-bold">Pide a domicilio!</a>
+          <div class="carousel-item">
+            <div class="ratio ratio-21x9 bg-info">
+              <img src="img/banner2.jpg" class="object-fit-cover" alt="[COMPLETAR: descripción del banner 2]">
+            </div>
+          </div>
+          <div class="carousel-item">
+            <div class="ratio ratio-21x9 bg-info">
+              <img src="img/banner3.jpg" class="object-fit-cover" alt="[COMPLETAR: descripción del banner 3]">
+            </div>
           </div>
         </div>
-        <div class="carousel-item">
-          <div class="ratio ratio-21x9 bg-info">
-            <img src="img/banner2.jpg" class="object-fit-cover" alt="[COMPLETAR: descripción del banner 2]">
-          </div>
-        </div>
-        <div class="carousel-item">
-          <div class="ratio ratio-21x9 bg-info">
-            <img src="img/banner3.jpg" class="object-fit-cover" alt="[COMPLETAR: descripción del banner 3]">
-          </div>
-        </div>
-      </div>
 
-      <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
-        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Anterior</span>
-      </button>
-      <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
-        <span class="carousel-control-next-icon" aria-hidden="true"></span>
-        <span class="visually-hidden">Siguiente</span>
-      </button>
-    </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#banner" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Anterior</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#banner" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Siguiente</span>
+        </button>
+      </div>
     </section>
 
     <!-- ==================== BARRA "IR A LA TIENDA" ==================== -->
@@ -104,27 +102,31 @@
     </section>
 
     <!-- ==================== DESTACADOS ==================== -->
+    <!-- Celular: 1 columna | iPad: 2 columnas | Escritorio: 3 columnas -->
     <section class="py-5">
       <div class="container py-lg-4">
-        <div class="row g-4 text-center">
-          <div class="col-12 col-md-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center text-center">
+          <div class="col">
             <a href="#manualidades" class="card h-100 border-0 shadow-sm text-decoration-none">
-              <!-- COMPLETAR: imagen destacada -->
-              <img src="img/destacado1.jpg" class="card-img-top" alt="[COMPLETAR: Manualidades]">
+              <div class="ratio ratio-4x3">
+                <img src="img/destacado1.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: Manualidades]">
+              </div>
               <div class="card-body"><h2 class="h4 text-uppercase fw-bold text-danger">Manualidades</h2></div>
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col">
             <a href="#papeleria" class="card h-100 border-0 shadow-sm text-decoration-none">
-              <!-- COMPLETAR: imagen destacada -->
-              <img src="img/destacado2.jpg" class="card-img-top" alt="[COMPLETAR: Papelería]">
+              <div class="ratio ratio-4x3">
+                <img src="img/destacado2.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: Papelería]">
+              </div>
               <div class="card-body"><h2 class="h4 text-uppercase fw-bold text-danger">Papelería</h2></div>
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col">
             <a href="#tecnologia" class="card h-100 border-0 shadow-sm text-decoration-none">
-              <!-- COMPLETAR: imagen destacada -->
-              <img src="img/destacado3.jpg" class="card-img-top" alt="[COMPLETAR: Tecnología]">
+              <div class="ratio ratio-4x3">
+                <img src="img/destacado3.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: Tecnología]">
+              </div>
               <div class="card-body"><h2 class="h4 text-uppercase fw-bold text-danger">Tecnología</h2></div>
             </a>
           </div>
@@ -136,22 +138,32 @@
     <section id="nosotros" class="bg-dark text-white py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center mb-5">Quiénes somos</h2>
-        <div class="row align-items-center g-5">
-          <div class="col-lg-6">
-            <h3 class="h4">Papeleria hecha para ayudar a la gente en apuros y siempre a servicio de nuestros clientes
-            </h3>
-            <p>Nos destacamos por ser la mejor papeleria, tenemos todo lo que necesiten incluso en tecnologia
-            a demas tambien encontraran manualidades que les podria interesar y que tambien podrian hacer, tambien hacemos
-            pedidos a domicilio
-            </p>
-            <p>Siempre tendremos la mision de cumplir y satisfacer a nuestros clientes</p>
-
-            <h3 class="h4 mt-4">¿Por qué elegirnos?</h3>
-            <ul>
-              <li>Encontraras todo lo que necesitas</li>
-              <li>Hacemos entregas a domicilio</li>
-              <li>Tenemos tecnologia que tambien servira para tus estudios</li>
-            </ul>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
+          <div class="col">
+            <div class="h-100 border border-secondary rounded-4 p-4">
+              <h3 class="h4">Papeleria hecha para ayudar a la gente en apuros y siempre a servicio de nuestros clientes
+              </h3>
+              <p>Nos destacamos por ser la mejor papeleria, tenemos todo lo que necesiten incluso en tecnologia
+              a demas tambien encontraran manualidades que les podria interesar y que tambien podrian hacer, tambien hacemos
+              pedidos a domicilio
+              </p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 border border-secondary rounded-4 p-4">
+              <h3 class="h4">Nuestra misión</h3>
+              <p>Siempre tendremos la mision de cumplir y satisfacer a nuestros clientes</p>
+            </div>
+          </div>
+          <div class="col">
+            <div class="h-100 border border-secondary rounded-4 p-4">
+              <h3 class="h4">¿Por qué elegirnos?</h3>
+              <ul>
+                <li>Encontraras todo lo que necesitas</li>
+                <li>Hacemos entregas a domicilio</li>
+                <li>Tenemos tecnologia que tambien servira para tus estudios</li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
@@ -161,20 +173,20 @@
     <section id="categorias" class="bg-dark text-white py-5 border-top border-secondary">
       <div class="container pb-4">
         <h2 class="display-5 fw-bold text-uppercase text-center mb-5">Categorías</h2>
-        <div class="row g-5 text-center">
-          <div class="col-12 col-md-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-5 justify-content-center text-center">
+          <div class="col">
             <a href="#manualidades" class="text-white text-decoration-none">
               <span class="d-inline-flex rounded-circle border border-2 border-light p-4 fs-1"><i class="bi bi-send-fill"></i></span>
               <h3 class="h4 fw-bold mt-3">Manualidades</h3>
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col">
             <a href="#papeleria" class="text-white text-decoration-none">
               <span class="d-inline-flex rounded-circle border border-2 border-light p-4 fs-1"><i class="bi bi-paperclip"></i></span>
               <h3 class="h4 fw-bold mt-3">Papelería</h3>
             </a>
           </div>
-          <div class="col-12 col-md-4">
+          <div class="col">
             <a href="#tecnologia" class="text-white text-decoration-none">
               <span class="d-inline-flex rounded-circle border border-2 border-light p-4 fs-1"><i class="bi bi-headphones"></i></span>
               <h3 class="h4 fw-bold mt-3">Tecnología</h3>
@@ -190,34 +202,37 @@
         <h2 class="display-5 fw-bold text-uppercase text-center text-danger mb-3">Manualidades</h2>
         <p class="text-center mb-5">Arte hecho a mano en cada detalle. Olvídate de los productos en serie; cada una de nuestras creaciones está elaborada artesanalmente, cuidando cada textura y acabado para ofrecerte una pieza irrepetible. Ideales para quienes buscan regalos con significado o decoración con calidez propia. Como lo hacemos a mano, podemos adaptar colores, tamaños y estilos a tu gusto.</p>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/manualidad1.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/manualidad1.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 1]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 1]</p>
+                <h3 class="h5 card-title">Collar hecho a mano</h3>
+                <p class="card-text">Pieza única de artesanía. Este collar combina cuentas de tonos cálidos y texturas naturales para aportar un toque bohemio, auténtico y exclusivo a cualquier atuendo diario.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/manualidad2.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/manualidad2.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 2]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 2]</p>
+                <h3 class="h5 card-title">Jarro de barro</h3>
+                <p class="card-text">Jarrito de barro tradicional modelado a mano. Ideal tanto para uso funcional en la cocina como elemento decorativo rústico que aporta calidez y tradición a tu hogar.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/manualidad3.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/manualidad3.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 3]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 3]</p>
+                <h3 class="h5 card-title">Sueter tejido</h3>
+                <p class="card-text">Suéter tejido a mano con diseño de trenzas texturizadas y botones frontales. Una prenda abrigada, cómoda y de calidad superior, perfecta para los días fríos con un estilo acogedor.</p>
               </div>
             </article>
           </div>
@@ -233,36 +248,39 @@
     <section id="papeleria" class="bg-white py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center text-danger mb-3">Papelería</h2>
-        <p class="text-center mb-5">[COMPLETAR: Breve introducción a esta categoría]</p>
+        <p class="text-center mb-5">Ideas en orden, creatividad sin límites. Seleccionamos artículos de papelería que combinan diseño estética y funcionalidad para acompañarte en la oficina, la universidad o tus proyectos personales. Desde libretas de alto gramaje y bolígrafos de trazo suave hasta organizadores de escritorio, nuestras herramientas están pensadas para motivarte a plasmar tus ideas y hacer tu rutina diaria más productiva y visualmente armoniosa.</p>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/papeleria1.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/papeleria1.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 1]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 1]</p>
+                <h3 class="h5 card-title">Cartulinas</h3>
+                <p class="card-text">Set de cartulinas en una amplia variedad de colores vibrantes. Perfectas para manualidades, proyectos escolares, maquetas y trabajos creativos de gran durabilidad.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/papeleria2.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/papeleria2.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 2]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 2]</p>
+                <h3 class="h5 card-title">Esferos</h3>
+                <p class="card-text">Gran variedad de esferos de tinta fluida y colores surtidos. Diseñados para una escritura suave, cómoda y continua, ideales para la escuela, la oficina o el estudio.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/papeleria3.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/papeleria3.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 3]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 3]</p>
+                <h3 class="h5 card-title">Cuadernos</h3>
+                <p class="card-text">Cuadernos de excelente calidad con encuadernación resistente y hojas ideales para tomar apuntes, dibujar o mantener organizada toda tu información diaria con estilo.</p>
               </div>
             </article>
           </div>
@@ -278,36 +296,39 @@
     <section id="tecnologia" class="bg-light py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center text-danger mb-3">Tecnología</h2>
-        <p class="text-center mb-5">[COMPLETAR: Breve introducción a esta categoría]</p>
+        <p class="text-center mb-5">Rendimiento y vanguardia a tu alcance. Contamos con una selección especializada de dispositivos electrónicos y accesorios diseñados para potenciar tu trabajo, entretenimiento y comunicación. Priorizamos equipos duraderos, funcionales y de alta compatibilidad que resuelven necesidades reales: desde carga rápida y audio de alta fidelidad hasta periféricos ergonómicos. Compra con seguridad gracias a nuestra garantía directa y soporte técnico.</p>
 
-        <div class="row row-cols-1 row-cols-md-3 g-4">
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 justify-content-center">
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/tecnologia1.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/tecnologia1.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 1]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 1]</p>
+                <h3 class="h5 card-title">Calculadoras</h3>
+                <p class="card-text">Calculadoras científicas y de escritorio confiables. Herramientas precisas y de alta durabilidad, ideales para estudiantes, profesionales y tareas financieras que exigen exactitud y rapidez.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/tecnologia2.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/tecnologia2.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 2]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 2]</p>
+                <h3 class="h5 card-title">Computadoras</h3>
+                <p class="card-text">Computadoras de alto rendimiento y diseño moderno. Perfectas para potenciar tu productividad laboral, estudios o entretenimiento con una velocidad y potencia incomparables.</p>
               </div>
             </article>
           </div>
           <div class="col">
             <article class="card h-100 shadow-sm border-0">
-              <!-- COMPLETAR: imagen del producto -->
-              <img src="img/tecnologia3.jpg" class="card-img-top" alt="[COMPLETAR: descripción de la imagen]">
+              <div class="ratio ratio-4x3">
+                <img src="img/tecnologia3.jpg" class="card-img-top object-fit-cover" alt="[COMPLETAR: descripción de la imagen]">
+              </div>
               <div class="card-body">
-                <h3 class="h5 card-title">[COMPLETAR: Nombre del producto 3]</h3>
-                <p class="card-text">[COMPLETAR: Descripción del producto 3]</p>
+                <h3 class="h5 card-title">Tablets</h3>
+                <p class="card-text">Tablets versátiles con pantalla táctil de alta definición. Ligeras y portátiles, ideales para lectura, diseño, clases virtuales y entretenimiento en cualquier lugar.</p>
               </div>
             </article>
           </div>
@@ -323,11 +344,10 @@
     <section id="multimedia" class="bg-dark text-white py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center mb-3">Conoce más de nosotros</h2>
-        <p class="text-center mb-4">[COMPLETAR: Texto que acompaña al video]</p>
+        <p class="text-center mb-4">Conoce mas de nuestra papeleria</p>
         <div class="row justify-content-center">
           <div class="col-lg-8">
             <div class="ratio ratio-16x9">
-              <!-- COMPLETAR: archivo de video en media/ -->
               <video controls poster="img/poster-video.jpg">
                 <source src="img/gemini_generated_video_818d6ca2.mp4" type="video/mp4">
                 Tu navegador no soporta el elemento de video.
@@ -339,28 +359,31 @@
     </section>
 
     <!-- ==================== MARCAS ==================== -->
+    <!-- Celular: 1 columna | iPad: 2 columnas | Escritorio: 3 columnas (los logos se muestran al 50% para que no queden gigantes) -->
     <section id="marcas" class="py-5 bg-white">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center text-dark mb-5">Marcas</h2>
-        <!-- COMPLETAR: logos de las marcas -->
-        <div class="row row-cols-2 row-cols-md-5 g-4 align-items-center text-center">
-          <div class="col"><img src="img/marca1.png" alt="[Marca 1]" class="img-fluid"></div>
-          <div class="col"><img src="img/marca2.png" alt="[Marca 2]" class="img-fluid"></div>
-          <div class="col"><img src="img/marca3.png" alt="[Marca 3]" class="img-fluid"></div>
-          <div class="col"><img src="img/marca4.png" alt="[Marca 4]" class="img-fluid"></div>
-          <div class="col"><img src="img/marca5.png" alt="[Marca 5]" class="img-fluid"></div>
+        <div class="row row-cols-1 row-cols-md-2 row-cols-lg-3 g-4 align-items-center justify-content-center text-center">
+          <div class="col"><img src="img/marca1.jpg" alt="[Marca 1]" class="img-fluid w-50 d-block mx-auto"></div>
+          <div class="col"><img src="img/marca2.jpg" alt="[Marca 2]" class="img-fluid w-50 d-block mx-auto"></div>
+          <div class="col"><img src="img/marca3.jpg" alt="[Marca 3]" class="img-fluid w-50 d-block mx-auto"></div>
+          <div class="col"><img src="img/marca4.png" alt="[Marca 4]" class="img-fluid w-50 d-block mx-auto"></div>
+          <div class="col"><img src="img/marca5.jpg" alt="[Marca 5]" class="img-fluid w-50 d-block mx-auto"></div>
         </div>
       </div>
     </section>
 
     <!-- ==================== UBICACIÓN (IFRAME) ==================== -->
+    <!-- Celular: todo en 1 columna | iPad: dirección y horario en 2 columnas, mapa abajo | Escritorio: 3 columnas -->
     <section id="ubicacion" class="py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center text-dark mb-4">Visítanos</h2>
         <div class="row g-4 align-items-center">
-          <div class="col-lg-5">
+          <div class="col-12 col-md-6 col-lg-3">
             <h3 class="h5 text-danger">Dirección</h3>
-            <p>[COMPLETAR: dirección del local]</p>
+            <p>Av. Eloy Alfaro y Av Unidad Nacional</p>
+          </div>
+          <div class="col-12 col-md-6 col-lg-4">
             <h3 class="h5 text-danger">Horario de atención</h3>
             <div class="table-responsive">
               <table class="table table-striped align-middle">
@@ -371,17 +394,16 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr><td>[COMPLETAR: Lunes a viernes]</td><td>[00:00 – 00:00]</td></tr>
-                  <tr><td>[COMPLETAR: Sábados]</td><td>[00:00 – 00:00]</td></tr>
-                  <tr><td>[COMPLETAR: Domingos]</td><td>[Cerrado / 00:00 – 00:00]</td></tr>
+                  <tr><td>Lunes a viernes</td><td>[08:00 – 23:00]</td></tr>
+                  <tr><td>Sábados</td><td>[11:00 – 20:00]</td></tr>
+                  <tr><td>Domingos</td><td>[ 12:00 – 23:00]</td></tr>
                 </tbody>
               </table>
             </div>
           </div>
-          <div class="col-lg-7">
+          <div class="col-12 col-lg-5">
             <div class="ratio ratio-16x9">
-              <!-- COMPLETAR: Google Maps → Compartir → Insertar un mapa → copiar el src -->
-              <iframe src="[COMPLETAR: URL del mapa]" title="Mapa de ubicación de la papelería" allowfullscreen loading="lazy"></iframe>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2144.938226879772!2d-78.61313168792815!3d-0.9641805855940264!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d4630addf43673%3A0x5d61b83abcbfb596!2sLa%20Nueva%20Papeleria%20Sur!5e0!3m2!1ses-419!2sec!4v1793252927826!5m2!1ses-419!2sec" title="Mapa de ubicación de la papelería" allowfullscreen loading="lazy"></iframe>
             </div>
           </div>
         </div>
@@ -389,44 +411,48 @@
     </section>
 
     <!-- ==================== CONTACTO (FORMULARIO) ==================== -->
+    <!-- Campos del formulario: celular 1 columna | iPad 2 columnas | Escritorio 3 columnas -->
     <section id="contacto" class="bg-dark text-white py-5">
       <div class="container">
         <h2 class="display-5 fw-bold text-uppercase text-center mb-3">Contáctanos</h2>
         <p class="text-center mb-5">[COMPLETAR: Frase persuasiva invitando a escribir, cotizar o hacer un pedido]</p>
 
         <div class="row justify-content-center g-5">
-          <div class="col-lg-7">
+          <div class="col-lg-8">
             <form action="#" method="post" class="card card-body text-dark p-4 border-0 rounded-4">
-              <div class="mb-3">
-                <label for="nombre" class="form-label">Nombre</label>
-                <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+              <div class="row g-3">
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="nombre" class="form-label">Nombre</label>
+                  <input type="text" class="form-control" id="nombre" name="nombre" placeholder="Tu nombre completo" required>
+                </div>
+                <div class="col-12 col-md-6 col-lg-4">
+                  <label for="correo" class="form-label">Correo electrónico</label>
+                  <input type="email" class="form-control" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
+                </div>
+                <div class="col-12 col-lg-4">
+                  <label for="asunto" class="form-label">Motivo de contacto</label>
+                  <select class="form-select" id="asunto" name="asunto">
+                    <option value="consulta">Consulta</option>
+                    <option value="cotizacion">Cotización</option>
+                    <option value="pedido">Pedido</option>
+                  </select>
+                </div>
+                <div class="col-12">
+                  <label for="mensaje" class="form-label">Mensaje</label>
+                  <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
+                </div>
+                <div class="col-12">
+                  <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">Enviar mensaje</button>
+                </div>
               </div>
-              <div class="mb-3">
-                <label for="correo" class="form-label">Correo electrónico</label>
-                <input type="email" class="form-control" id="correo" name="correo" placeholder="tucorreo@ejemplo.com" required>
-              </div>
-              <div class="mb-3">
-                <label for="asunto" class="form-label">Motivo de contacto</label>
-                <select class="form-select" id="asunto" name="asunto">
-                  <option value="consulta">Consulta</option>
-                  <option value="cotizacion">Cotización</option>
-                  <option value="pedido">Pedido</option>
-                </select>
-              </div>
-              <div class="mb-3">
-                <label for="mensaje" class="form-label">Mensaje</label>
-                <textarea class="form-control" id="mensaje" name="mensaje" rows="5" placeholder="Escribe tu mensaje aquí" required></textarea>
-              </div>
-              <button type="submit" class="btn btn-danger btn-lg w-100 fw-bold">Enviar mensaje</button>
             </form>
           </div>
 
-          <div class="col-lg-4">
+          <div class="col-lg-4 text-center text-lg-start">
             <h3 class="h4">Otros medios de contacto</h3>
             <ul class="list-unstyled">
-              <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i>[COMPLETAR: Teléfono / WhatsApp]</li>
-              <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i>[COMPLETAR: Correo]</li>
-              <li class="mb-2"><i class="bi bi-geo-alt-fill me-2"></i>[COMPLETAR: Dirección]</li>
+              <li class="mb-2"><i class="bi bi-telephone-fill me-2"></i>094195619</li>
+              <li class="mb-2"><i class="bi bi-envelope-fill me-2"></i>papeleriasanlucas@gmail.com</li>
             </ul>
           </div>
         </div>
@@ -438,20 +464,16 @@
   <!-- ==================== REDES SOCIALES ==================== -->
   <section id="redes" class="bg-danger py-3">
     <div class="container d-flex justify-content-center gap-5 fs-1">
-      <a href="[COMPLETAR: enlace Facebook]" class="link-light" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
-      <a href="[COMPLETAR: enlace Instagram]" class="link-light" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
-      <a href="[COMPLETAR: enlace TikTok]" class="link-light" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
+      <a href="#" class="link-light" target="_blank" rel="noopener" aria-label="Facebook"><i class="bi bi-facebook"></i></a>
+      <a href="#" class="link-light" target="_blank" rel="noopener" aria-label="Instagram"><i class="bi bi-instagram"></i></a>
+      <a href="#" class="link-light" target="_blank" rel="noopener" aria-label="TikTok"><i class="bi bi-tiktok"></i></a>
     </div>
   </section>
 
   <!-- ==================== PIE DE PÁGINA ==================== -->
   <footer class="text-center py-3 bg-white">
-    <p class="mb-0 small">&copy; [AÑO] [NOMBRE DE LA PAPELERÍA]. Todos los derechos reservados.</p>
+    <p class="mb-0 small">&copy; 2000 Papeleria San Lucas. Todos los derechos reservados.</p>
   </footer>
-
-  <!-- ==================== BOTONES FLOTANTES ==================== -->
-  <a href="[COMPLETAR: enlace de WhatsApp]" class="btn btn-success rounded-circle position-fixed bottom-0 start-0 m-3 p-3 fs-4 lh-1 z-3" target="_blank" rel="noopener" aria-label="WhatsApp"><i class="bi bi-whatsapp"></i></a>
-  <a href="[COMPLETAR: enlace de Messenger]" class="btn btn-primary rounded-circle position-fixed bottom-0 end-0 m-3 p-3 fs-4 lh-1 z-3" target="_blank" rel="noopener" aria-label="Messenger"><i class="bi bi-messenger"></i></a>
 
   <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </body>
